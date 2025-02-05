@@ -55,7 +55,7 @@ import MainCTA from "~/components/ui/MainCTA.vue";
 import ScrollToExplore from "~/components/ScrollToExplore.vue";
 import HomeHeroLink from "~/components/ui/HomeHeroLink.vue";
 
-let animation: any;
+let animation;
 
 onMounted(() => {
   setTimeout(() => {

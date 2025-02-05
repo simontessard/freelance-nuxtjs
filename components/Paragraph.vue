@@ -20,14 +20,14 @@ onMounted(() => {
     linesClass: 'line',
   })
 
-  split.lines.forEach((line: HTMLElement, index: number) => {
+  split.lines.forEach((line, index) => {
     const wrapper = document.createElement('span')
     wrapper.classList.add('inline-block')
     wrapper.classList.add('overflow-hidden')
     wrapper.classList.add('h-6')
     wrapper.classList.add('md:h-8')
 
-    const lineContent = line.cloneNode(true) as HTMLElement
+    const lineContent = line.cloneNode(true)
     lineContent.classList.add('translate-y-32')
     lineContent.classList.add('md:translate-y-40')
     lineContent.classList.add('rotate-20')

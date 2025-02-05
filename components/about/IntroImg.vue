@@ -21,7 +21,7 @@ onMounted(() => {
     gsap.to('.js-intro-img', {
       clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
       duration: 1.3,
-      delay: 0.7,
+      delay: 0.4,
       ease: 'power4.inOut',
     })
 })

@@ -6,7 +6,6 @@
         <NuxtPage class="page-content"/>
       </div>
     </NuxtLayout>
-    <Footer/>
 </template>
 
 <script setup>

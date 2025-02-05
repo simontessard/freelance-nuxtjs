@@ -2,18 +2,20 @@
   <li ref="project" :class="['', className]">
     <nuxt-link :href="href" target="_blank" class="block size-full">
       <div
-          class="img-container overflow-hidden size-full mb-3.5"
+          class="overflow-hidden size-full bg-red-200 mb-3.5"
           :style="{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)' }"
           ref="imgContainer"
       >
-        <nuxt-img
-            loading="eager"
-            quality="90"
-            ref="img"
-            :src="imageUrl"
-            :alt="imageAlt"
-            class="size-full scale-110 object-cover object-center"
-        />
+        <div ref="imgScale" class="size-full scale-110">
+          <nuxt-img
+              loading="eager"
+              quality="90"
+              format="webp"
+              :src="imageUrl"
+              :alt="imageAlt"
+              class="size-full object-cover"
+          />
+        </div>
       </div>
 
       <h3 class="text-black text-2xl font-lausanne tracking-tight">
@@ -52,7 +54,7 @@ const props = defineProps({
 
 const project = ref(null)
 const imgContainer = ref(null)
-const img = ref(null)
+const imgScale = ref(null)
 
 onMounted(() => {
   setTimeout(() => {
@@ -69,10 +71,10 @@ onMounted(() => {
       ease: 'power4.inOut',
       clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
     })
-    tl.to(img.value, {
+    tl.to(imgScale.value, {
       duration: 1,
       ease: 'power4.inOut',
-      scale: 1
+      scale: 1,
     }, '<')
   }, 1000)
 })

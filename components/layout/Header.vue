@@ -11,23 +11,22 @@
 </template>
 
 <script setup>
-import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {gsap} from "gsap";
 import {onMounted} from "vue";
 import HeaderLink from "~/components/ui/HeaderLink.vue";
 
 onMounted(() => {
-
-  ScrollTrigger.create({
-    trigger: '.js-nav',
-    start: '+1',
-    end: '+40',
-    scrub: 1,
-    animation: gsap.to('.js-nav', {
+  setTimeout(() => {
+    gsap.to('.js-nav', {
       autoAlpha: 0,
-      ease: 'power1.out'
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: '.js-nav',
+        start: '+1',
+        end: '+40',
+        scrub: 1,
+      }
     })
-  })
-
+  }, 1000)
 })
 </script>

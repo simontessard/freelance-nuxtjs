@@ -7,21 +7,20 @@
 
 <script setup>
 import {onMounted} from "vue";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {gsap} from "gsap";
 
 onMounted(() => {
-
-  ScrollTrigger.create({
-    trigger: '.js-back-home',
-    start: '+1',
-    end: '+40',
-    scrub: 1,
-    animation: gsap.to('.js-back-home', {
+  setTimeout(() => {
+    gsap.to('.js-back-home', {
       autoAlpha: 0,
-      ease: 'power1.out'
+      ease: 'power1.out',
+      scrollTrigger: {
+        trigger: '.js-back-home',
+        start: '+1',
+        end: '+40',
+        scrub: 1,
+      }
     })
-  })
-
+  }, 1000)
 })
 </script>

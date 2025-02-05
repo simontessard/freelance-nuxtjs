@@ -1,6 +1,6 @@
 <template>
   <div
-      class="cursor-follower absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white font-lausanne"
+      class="cursor-follower max-md:hidden absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white font-lausanne"
       :style="{ transform: `translate(${position.x}px, ${position.y}px)` }"
   >
     <span class="flex relative size-28 rounded-full overflow-hidden">

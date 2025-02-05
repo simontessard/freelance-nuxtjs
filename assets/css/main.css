@@ -3,3 +3,17 @@
 body {
   @apply bg-black;
 }
+
+@theme {
+  --font-lausanne: 'Lausanne', var(--font-sans);
+}
+
+@font-face {
+  font-family: 'Lausanne';
+  src: url('../fonts/Lausanne-300.woff2') format('woff2');
+  src: url('../fonts/Lausanne-300.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

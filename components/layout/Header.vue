@@ -11,13 +11,13 @@
 </template>
 
 <script setup>
-import {gsap} from "gsap";
+const { $gsap } = useNuxtApp()
 import {onMounted} from "vue";
 import HeaderLink from "~/components/ui/HeaderLink.vue";
 
 onMounted(() => {
   setTimeout(() => {
-    gsap.to('.js-nav', {
+    $gsap.to('.js-nav', {
       autoAlpha: 0,
       ease: 'power1.out',
       scrollTrigger: {

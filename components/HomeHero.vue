@@ -1,5 +1,5 @@
 <template>
-  <section class="relative z-20 h-[125dvh] md:h-[250vh]">
+  <section class="relative z-20 h-[125vh] md:h-[250vh]">
 
     <CursorScroll/>
 
@@ -33,7 +33,7 @@
         Contactez-moi pour discuter de votre projet.
       </Paragraph>
       <div class="flex max-md:flex-col max-md:gap-8 md:items-center md:justify-between">
-        <MainCTA/>
+        <MainCTA text="À propos" href="/about"/>
         <div class="flex max-md:flex-col gap-4 md:gap-20">
           <ul class="flex flex-col gap-4">
             <HomeHeroLink title="03 34 43 43 43" href="/about" />

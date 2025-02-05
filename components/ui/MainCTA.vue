@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link href="/about" class="cursor-pointer flex gap-2.5 items-center group font-lausanne text-xl text-white overflow-hidden size-fit">
+  <nuxt-link :href="href" class="cursor-pointer flex gap-2.5 items-center group font-lausanne text-xl text-white overflow-hidden size-fit">
 
     <div class="relative size-11">
       <svg class="absolute z-10 top-0 bottom-0 left-0 right-0 m-auto -translate-x-10 transition-transform duration-300 md:group-hover:translate-x-0 stroke-black text-white size-4"
@@ -13,7 +13,7 @@
     </div>
 
     <span class="-translate-x-2.5 md:group-hover:translate-x-0 transition-transform duration-300 h-7 relative">
-      À propos
+      {{ text }}
       <span class="absolute bottom-0.5 block bg-white h-0.25 w-full md:group-hover:translate-x-full transition-transform ease-in-out duration-500"/>
     </span>
 
@@ -21,4 +21,14 @@
 </template>
 
 <script setup>
+defineProps({
+  href: {
+    type: String,
+    required: true
+  },
+  text: {
+    type: String,
+    required: true
+  }
+})
 </script>

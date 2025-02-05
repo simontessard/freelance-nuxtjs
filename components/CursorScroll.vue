@@ -1,11 +1,11 @@
 <template>
   <div
-      class="cursor-follower max-md:hidden absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white font-lausanne"
+      class="cursor-follower max-md:hidden absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white text-lg font-lausanne"
       :style="{ transform: `translate(${position.x}px, ${position.y}px)` }"
   >
     <span class="flex relative size-28 rounded-full overflow-hidden">
-      <span class="block absolute top-0 size-full rounded-full" :style="{backdropFilter: '20px', backgroundColor: 'rgba(0,0,0,.15)'}"/>
-      <span class="block size-fit absolute top-0 bottom-0 left-0 right-0 m-auto text-lg">Scroll</span>
+      <span class="block absolute top-0 size-full rounded-full" :style="{backdropFilter: 'blur(20px)', backgroundColor: 'rgba(0,0,0,.10)'}"/>
+      <span class="block size-fit absolute top-0 bottom-0 left-0 right-0 m-auto">Scroll</span>
     </span>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
 
-  <section class="js-work-section relative z-30 bg-white px-4 md:px-14 xl:px-30 2xl:px-40 pt-24 md:pt-45 pb-26 md:pb-40">
+  <section class="js-work-section relative z-30 bg-white px-4 md:px-14 xl:px-30 2xl:px-40 pt-24 md:pt-40 2xl:pt-50 pb-26 md:pb-40">
 
     <WorkTitle/>
 

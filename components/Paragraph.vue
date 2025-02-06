@@ -18,13 +18,13 @@ const split = ref(null)
 
 onMounted(() => {
 
-  setTimeout(() => {
-    const split = new SplitType(split.value, {
+  if (split.value) {
+    const splitInstance = new SplitType(split.value, {
       types: 'lines',
       linesClass: 'line',
     })
 
-    split.lines.forEach((line, index) => {
+    splitInstance.lines.forEach((line, index) => {
       const wrapper = document.createElement('span')
       wrapper.classList.add('inline-block')
       wrapper.classList.add('overflow-hidden')
@@ -49,6 +49,6 @@ onMounted(() => {
       delay: 0.6,
       ease: 'power4.out',
     })
-  }, 1000)
+  }
 })
 </script>

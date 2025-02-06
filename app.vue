@@ -3,7 +3,7 @@
     <BackHome/>
     <NuxtLayout>
       <div class="relative min-h-screen">
-        <NuxtPage class="page-content"/>
+        <NuxtPage class="page-content overflow-hidden"/>
       </div>
     </NuxtLayout>
 </template>
@@ -50,7 +50,7 @@ import Footer from '~/components/layout/Footer.vue'
 */
 
 .page-leave-to {
-  transform: rotate(-6deg) scale(1.3) translateY(-5%);
+  transform: rotate(-6deg) scale(1.3) translateY(-3%);
   opacity: 0;
   transition: all .7s ease-in-out;
 }

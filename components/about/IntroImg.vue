@@ -2,7 +2,7 @@
   <div class="bg-white w-full md:w-120 h-100 md:h-150">
     <div class="js-intro-img size-full" :style="{clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)'}">
       <CldImage
-          src="sxf3nqt3cgtsqtea5dt5"
+          src="samples/smile"
           width="auto"
           height="auto"
           loading="eager"

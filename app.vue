@@ -15,19 +15,29 @@ import Footer from '~/components/layout/Footer.vue'
 </script>
 
 <style>
-.page-enter-active,
+.page-enter-active {
+  transition: all .8s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .page-leave-active {
   transition: all .8s;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
 .page-enter-active {
   z-index: 20;
+  height: 100vh;
 }
 
 .page-enter-from {
-  transform: translateY(100%) rotate(10deg) scale(1.4) translateX(-8%);
+  transform: translateY(100%) rotate(10deg) scale(1.4) translateX(-10%);
   /* clip-path: polygon(0% 100%, 0% 80%, 100% 100%, 100% 100%); */
   transition: all .8s cubic-bezier(0.55, 0.18, 0, 1.05);
 }

@@ -1,7 +1,7 @@
 <template>
   <div
       ref="cursor"
-      class="cursor-follower max-md:hidden absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white text-lg font-lausanne"
+      class="max-md:hidden absolute z-200 size-28 rounded-full pointer-events-none flex items-center justify-center text-white text-lg font-lausanne"
       :style="{ transform: `translate(${position.x}px, ${position.y}px)` }"
   >
     <span class="flex relative size-28 rounded-full overflow-hidden">

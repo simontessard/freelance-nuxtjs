@@ -3,7 +3,7 @@
 
     <CursorScroll/>
 
-    <div class="absolute z-11 left-0 top-0 bg-black/25 size-full"/>
+    <div class="absolute z-11 left-0 top-0 bg-black/30 size-full"/>
 
     <CldImage
         src="sxf3nqt3cgtsqtea5dt5"

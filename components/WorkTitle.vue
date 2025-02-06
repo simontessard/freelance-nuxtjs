@@ -1,6 +1,6 @@
 <template>
-  <div ref="titleContainer" class="overflow-hidden size-fit h-16 md:h-60 mb-14 md:mb-30 max-md:mx-auto">
-    <h2 ref="title" class="text-black translate-y-16 md:translate-y-100 rotate-30 text-6xl md:text-[15rem] font-lausanne tracking-tight">
+  <div ref="titleContainer" class="overflow-hidden size-fit h-16 md:h-58 mb-14 md:mb-30 max-md:mx-auto">
+    <h2 ref="title" class="text-black translate-y-16 md:translate-y-120 rotate-30 text-6xl md:text-[15rem] font-lausanne tracking-tight">
       Projets
     </h2>
   </div>
@@ -20,7 +20,7 @@ onMounted(() => {
       y: 0,
       duration: .8,
       rotate: 0,
-      ease: 'power1.out',
+      ease: 'power2.out',
       scrollTrigger: {
         trigger: titleContainer.value,
         start: 'top 60%',

@@ -22,9 +22,9 @@
         façonnant des interfaces innovantes <br/>
         pour rendre votre présence en ligne marquante.
       </Paragraph>
-      <div class="xl:mb-10 2xl:mb-20">
-        <PageTitle title="Web" className="-mb-12"/>
-        <PageTitle title="Developer" className="-mb-12"/>
+      <div class="mb-6 xl:mb-10 2xl:mb-20">
+        <PageTitle title="Web" className="-mb-2 2xl:-mb-12"/>
+        <PageTitle title="Developer" className="-mb-1 2xl:-mb-12"/>
         <PageTitle title="Freelance" />
       </div>
       <Paragraph>

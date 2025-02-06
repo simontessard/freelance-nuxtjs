@@ -1,6 +1,7 @@
 <template>
-  <div :class="className" class="size-fit overflow-hidden h-26 xl:h-70 2xl:h-86 2xl:-translate-x-5">
-    <h1 ref="pageTitle" class="rotate-[20deg] font-lausanne tracking-tight translate-y-[200%] opacity-0 font-light text-white text-5xl xl:text-[16rem] 2xl:text-[19rem] 2xl:leading-103">
+  <div :class="className" class="size-fit overflow-hidden h-16 md:h-40 lg:h-50 xl:h-65 2xl:h-86 2xl:-translate-x-5">
+    <h1 ref="pageTitle" class="rotate-[20deg] font-lausanne tracking-tight translate-y-[200%] opacity-0 font-light text-white
+    text-5xl md:text-9xl lg:text-[12rem] xl:text-[15rem] 2xl:text-[19rem] leading-18 md:leading-50 lg:leading-60 xl:leading-70 2xl:leading-103">
       {{ title }}
     </h1>
   </div>

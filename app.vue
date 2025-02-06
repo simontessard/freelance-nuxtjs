@@ -50,7 +50,7 @@ import Footer from '~/components/layout/Footer.vue'
 */
 
 .page-leave-to {
-  transform: rotate(-6deg) scale(1.3);
+  transform: rotate(-6deg) scale(1.3) translateY(-5%);
   opacity: 0;
   transition: all .7s ease-in-out;
 }
